@@ -5,6 +5,8 @@ A lightweight, Markdown-powered note-taking application inspired by the native m
 MDNotes provides a clean workspace for creating, editing, organizing, and managing notes, with local data persistence and Firebase integration.
 
 **[Live Demo](https://md-notes-414a7.web.app/)**
+* email: guest@mail.ru
+* password: password
 
 ---
 
