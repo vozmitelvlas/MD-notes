@@ -1,24 +1,89 @@
-# Md Notes
+# MDNotes
 
-Упрощённая копия приложения «Заметки» из macOS, созданная на React + TypeScript.
+A lightweight, Markdown-powered note-taking application inspired by the native macOS Notes app.
 
-### Реализовано
+MDNotes provides a clean workspace for creating, editing, organizing, and managing notes, with local data persistence and Firebase integration.
 
-- Авторизация пользователя
-- Создание, редактирование и удаление заметок
-- Автоматическое сохранение изменений
-- Отображение Markdown
-- Поиск заметок по частичному совпадению
-- Адаптивный интерфейс на Mantine
-- Сохранение данных в IndexedDB с помощью Dexie
-- Клиентская маршрутизация с React Router
-- Светлая и тёмная темы
-- PWA с поддержкой автономной работы
+**[Live Demo](https://md-notes-414a7.web.app/)**
 
-### Стек
+---
 
-React · TypeScript · Vite · Mantine · React Router · Dexie · EasyMDE · React Markdown
+## Features
 
-### Demo
+- **Authentication** — user authentication with Firebase Authentication.
+- **Note Management** — create, edit, and delete notes.
+- **Auto Save** — automatically saves changes while editing, with a debounce mechanism.
+- **Markdown Editor** — write notes using Markdown with EasyMDE.
+- **Markdown Preview** — render formatted content, including GitHub Flavored Markdown and code blocks.
+- **Search** — quickly find notes by title.
+- **Local Storage** — persist notes locally using IndexedDB and Dexie.
+- **Cloud Integration** — store and retrieve user notes through Firebase Firestore.
+- **Responsive UI** — adaptive interface built with Mantine.
+- **Progressive Web App** — installable application with PWA support and offline capabilities.
+- **Theme Support** — light and dark appearance.
 
-[Открыть приложение](https://md-notes-51f51.web.app/)
+## Tech Stack
+
+**Frontend**: React, TypeScript, Mantine
+
+**Routing**: React Router
+
+**Database**: Dexie, IndexedDB
+
+**Backend**: Firebase Authentication, Firestore
+
+**Editor**: EasyMDE, React Markdown
+
+**PWA**: Vite PWA
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (LTS recommended)
+- npm
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/MDNotes.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd MDNotes
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the application at the URL provided by Vite.
+
+
+## Deployment
+
+The project is configured for deployment using Firebase Hosting.
+
+Build the production version:
+
+```bash
+npm run build
+```
+
+Deploy with Firebase CLI:
+
+```bash
+firebase deploy
+```
